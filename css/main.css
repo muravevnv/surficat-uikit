@@ -134,6 +134,12 @@ main {
   margin-top: 32px;
 }
 
+svg {
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
 h1 {
   font-size: 40px;
   line-height: 52px;
@@ -252,6 +258,7 @@ h6 {
   font-weight: 600;
   gap: 12px;
   cursor: pointer;
+  transition: 0.25s;
 }
 .btn svg {
   stroke: var(--white);
@@ -260,6 +267,7 @@ h6 {
   background-color: var(--primary-hover);
   border-color: var(--primary-hover);
   color: var(--white);
+  transition: 0.25s;
 }
 .btn:hover svg {
   stroke: var(--white);
@@ -268,6 +276,7 @@ h6 {
   background-color: var(--primary-pressed);
   border-color: var(--primary-pressed);
   color: var(--white);
+  transition: 0.25s;
 }
 .btn:active svg {
   stroke: var(--white);
@@ -276,7 +285,7 @@ h6 {
   padding: 11px;
   font-size: 16px;
   line-height: 24px;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 .btn--s {
   padding: 7px;
@@ -287,12 +296,12 @@ h6 {
   border-radius: 4px;
 }
 .btn--s .lds-ring {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
 }
 .btn--s .lds-ring div {
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
 }
 .btn--s svg {
   width: 16px;
@@ -307,12 +316,12 @@ h6 {
   border-radius: 4px;
 }
 .btn--xs .lds-ring {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
 }
 .btn--xs .lds-ring div {
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
 }
 .btn--xs svg {
   width: 16px;
@@ -335,10 +344,12 @@ h6 {
 .btn--red:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), #FF4D50;
   border-color: transparent;
+  transition: 0.25s;
 }
 .btn--red:active {
   background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), #FF4D50;
   border-color: transparent;
+  transition: 0.25s;
 }
 .btn--outline {
   background-color: var(--white);
@@ -351,8 +362,8 @@ h6 {
 .btn--outline .lds-ring div {
   border-color: var(--primary) transparent transparent transparent;
 }
-.btn--outline.btn--disabled {
-  background-color: var(--white);
+.btn--outline:hover {
+  transition: 0.25s;
 }
 .btn--outline:hover .lds-ring div {
   border-color: var(--white) transparent transparent transparent;
@@ -376,6 +387,9 @@ h6 {
 }
 .btn--icon span {
   display: none;
+}
+.btn--loaded {
+  pointer-events: none;
 }
 
 .lds-ring {

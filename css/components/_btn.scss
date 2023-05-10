@@ -36,6 +36,7 @@
   font-weight: 600;
   gap: 12px;
   cursor: pointer;
+  transition: .25s;
   
 
   svg {
@@ -46,6 +47,7 @@
     background-color: var(--primary-hover);
     border-color: var(--primary-hover);
     color: var(--white);
+    transition: .25s;
 
     svg {
       stroke: var(--white);
@@ -56,6 +58,7 @@
     background-color: var(--primary-pressed);
     border-color: var(--primary-pressed);
     color: var(--white);
+    transition: .25s;
 
     svg {
       stroke: var(--white);
@@ -66,7 +69,7 @@
     padding: 11px;
     font-size: 16px;
     line-height: 24px;
-    border-radius: 4px;
+    border-radius: 6px;
   }
 
   &--s {
@@ -78,12 +81,12 @@
     border-radius: 4px;
 
     .lds-ring {
-      width: 16px;
-      height: 16px;
+      width: 20px;
+      height: 20px;
 
       div {
-        width: 12px;
-        height: 12px;
+        width: 16px;
+        height: 16px;
       }
     }
 
@@ -102,12 +105,12 @@
     border-radius: 4px;
 
     .lds-ring {
-      width: 16px;
-      height: 16px;
+      width: 18px;
+      height: 18px;
 
       div {
-        width: 12px;
-        height: 12px;
+        width: 14px;
+        height: 14px;
       }
     }
 
@@ -137,11 +140,13 @@
     &:hover {
       background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), #FF4D50;;
       border-color: transparent;
+      transition: .25s;
     }
 
     &:active {
       background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), #FF4D50;;
       border-color: transparent;
+      transition: .25s;
     }
   }
 
@@ -159,11 +164,12 @@
       border-color: var(--primary) transparent transparent transparent; 
     }
 
-    &.btn--disabled {
-      background-color: var(--white);
-    }
+    // &.btn--disabled {
+    //   background-color: var(--white);
+    // }
 
     &:hover {
+      transition: .25s;
       .lds-ring div {
         border-color: var(--white) transparent transparent transparent; 
       }
@@ -192,6 +198,10 @@
     span {
       display: none;
     }
+  }
+
+  &--loaded {
+    pointer-events: none;
   }
 }
 
