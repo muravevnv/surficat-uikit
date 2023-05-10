@@ -47,7 +47,7 @@
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("fonts/Gilroy-SemiBold.woff") format("woff");
+  src: url("fonts/Gilroy-SemiBold.woff") format("woff"), url("fonts/Gilroy-SemiBold.ttf") forma("truetype");
   font-style: normal;
   font-weight: 600;
   font-display: swap;
