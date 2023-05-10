@@ -295,6 +295,9 @@ h6 {
   min-width: 40px;
   border-radius: 4px;
 }
+.btn--s span {
+  line-height: 23px;
+}
 .btn--s .lds-ring {
   width: 20px;
   height: 20px;
@@ -314,6 +317,9 @@ h6 {
   min-height: 32px;
   min-width: 32px;
   border-radius: 4px;
+}
+.btn--xs span {
+  line-height: 23px;
 }
 .btn--xs .lds-ring {
   width: 18px;
