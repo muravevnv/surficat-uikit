@@ -30,9 +30,9 @@
   </symbol>
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="Alert-circle-24">
     <g clip-path="url(#clip0_2935_10411)">
-      <path d="M11.9993 20.3334C16.6017 20.3334 20.3327 16.6025 20.3327 12.0001C20.3327 7.39771 16.6017 3.66675 11.9993 3.66675C7.39698 3.66675 3.66602 7.39771 3.66602 12.0001C3.66602 16.6025 7.39698 20.3334 11.9993 20.3334Z" stroke="#232124" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
-      <path d="M12 15.3333H12.0092" stroke="#232124" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
-      <path d="M12 8.66675V12.0001" stroke="#232124" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M11.9993 20.3334C16.6017 20.3334 20.3327 16.6025 20.3327 12.0001C20.3327 7.39771 16.6017 3.66675 11.9993 3.66675C7.39698 3.66675 3.66602 7.39771 3.66602 12.0001C3.66602 16.6025 7.39698 20.3334 11.9993 20.3334Z"  stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M12 15.3333H12.0092"  stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M12 8.66675V12.0001"  stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
     </g>
     <defs>
       <clipPath id="clip0_2935_10411">
@@ -435,8 +435,8 @@
     <path d="M6.66602 7.33325V11.3333" stroke="#232124" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="User-24">
-    <path d="M18.6673 19.5V17.8333C18.6673 16.9493 18.3161 16.1014 17.691 15.4763C17.0659 14.8512 16.218 14.5 15.334 14.5H8.66732C7.78326 14.5 6.93542 14.8512 6.31029 15.4763C5.68517 16.1014 5.33398 16.9493 5.33398 17.8333V19.5" stroke="#232124" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
-    <path d="M11.9993 11.1667C13.8403 11.1667 15.3327 9.67428 15.3327 7.83333C15.3327 5.99238 13.8403 4.5 11.9993 4.5C10.1584 4.5 8.66602 5.99238 8.66602 7.83333C8.66602 9.67428 10.1584 11.1667 11.9993 11.1667Z" stroke="#232124" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M18.6673 19.5V17.8333C18.6673 16.9493 18.3161 16.1014 17.691 15.4763C17.0659 14.8512 16.218 14.5 15.334 14.5H8.66732C7.78326 14.5 6.93542 14.8512 6.31029 15.4763C5.68517 16.1014 5.33398 16.9493 5.33398 17.8333V19.5"  stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M11.9993 11.1667C13.8403 11.1667 15.3327 9.67428 15.3327 7.83333C15.3327 5.99238 13.8403 4.5 11.9993 4.5C10.1584 4.5 8.66602 5.99238 8.66602 7.83333C8.66602 9.67428 10.1584 11.1667 11.9993 11.1667Z"  stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="User-Circle-24">
     <circle cx="12" cy="12" r="9.15" stroke="#232124" stroke-width="1.7"></circle>
