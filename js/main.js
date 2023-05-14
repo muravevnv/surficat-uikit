@@ -18,6 +18,11 @@ formControls.forEach(function(item){
       item.classList.remove('is-fill');
     }
   })
+})
 
 
+const selects = document.querySelectorAll('select')
+
+selects.forEach(function(item) {
+  NiceSelect.bind(item)
 })
