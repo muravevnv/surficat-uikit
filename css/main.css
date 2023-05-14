@@ -822,6 +822,7 @@ h6 {
 }
 .dropdown-list-icon svg {
   stroke: var(--grey);
+  stroke-width: 1.7px;
 }
 .dropdown-list-icon .nice-select {
   padding-left: 59px;
@@ -874,4 +875,18 @@ h6 {
   font-size: 16px;
   line-height: 26px;
   font-weight: 500;
+}
+
+.nice-select:hover {
+  border-color: var(--grey);
+}
+
+.nice-select.open {
+  border-color: var(--primary);
+}
+.nice-select.open::after {
+  background-image: url("../images/icons/ArrowDown_N-24-color.svg");
+}
+.nice-select.open ~ .dropdown-list__icon svg {
+  stroke: var(--primary);
 }/*# sourceMappingURL=main.css.map */
