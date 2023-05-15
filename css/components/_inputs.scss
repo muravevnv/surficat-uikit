@@ -160,6 +160,10 @@
         stroke: var(--red)
       }
     }
+
+    ~ .form__tooltip {
+      color: var(--red);
+    }
   }
 
   &.is-disabled {
@@ -193,6 +197,7 @@
       padding: 11px 15px;
       font-size: 14px;
       line-height: 24px;
+      min-height: 150px;
 
       + .form__label {
         top: 11px;
@@ -234,8 +239,14 @@
   border-radius: 8px;
   color: #787486;
   height: 100%;
-  min-height: 150px;
+  min-height: 170px;
   font-weight: 500;
+
+  + .form__label {
+    top: 14px;
+    font: 16px;
+    line-height: 26px;
+  }
 
   &.is-focus {
     padding-top: 36px;
@@ -259,6 +270,10 @@
 
   &.is-error {
     border-color: var(--red);
+
+    ~ .form__tooltip {
+      color: var(--red);
+    }
 
     + .form__label {
       color:  var(--red);

@@ -80,9 +80,15 @@ main {
   }
 
   &-segment {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    align-items: flex-start;
     gap: 32px;
+
+    > div {
+      width: calc(33.3333% - 22px);
+    }
     
     + .showcase-segment {
       margin-top: 32px;
