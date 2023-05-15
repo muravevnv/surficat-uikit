@@ -129,8 +129,12 @@ main {
   display: flex;
   align-items: flex-start;
   gap: 32px;
+  flex-wrap: wrap;
 }
 .showcase-segment > div {
+  width: calc(33.3333% - 22px);
+}
+.showcase-segment > h1, .showcase-segment h2, .showcase-segment h3, .showcase-segment h4, .showcase-segment h5, .showcase-segment p {
   width: calc(33.3333% - 22px);
 }
 .showcase-segment + .showcase-segment {
