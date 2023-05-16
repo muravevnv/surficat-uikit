@@ -26,38 +26,33 @@
 
 @font-face {
   font-family: "Gilroy";
-  src: url("fonts/Gilroy-Ligth.woff") format("woff");
+  src: url("../fonts/Gilroy-Ligth.woff") format("woff");
   font-style: normal;
   font-weight: 300;
-  font-display: swap;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("fonts/Gilroy-Regular.woff") format("woff");
+  src: url("../fonts/Gilroy-Regular.woff") format("woff");
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("fonts/Gilroy-Medium.woff") format("woff");
+  src: url("../fonts/Gilroy-Medium.woff") format("woff");
   font-style: normal;
   font-weight: 500;
-  font-display: swap;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("fonts/Gilroy-SemiBold.woff") format("woff"), url("fonts/Gilroy-SemiBold.ttf") forma("truetype");
+  src: url("../fonts/Gilroy-SemiBold.woff") format("woff");
   font-style: normal;
   font-weight: 600;
-  font-display: swap;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("fonts/Gilroy-Bold.woff") format("woff");
+  src: url("../fonts/Gilroy-Bold.woff") format("woff");
   font-style: normal;
   font-weight: 700;
-  font-display: swap;
 }
 * {
   box-sizing: border-box;
@@ -131,9 +126,6 @@ main {
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
   width: 100%;
-}
-.showcase-segment > h1, .showcase-segment h2, .showcase-segment h3, .showcase-segment h4, .showcase-segment h5, .showcase-segment p {
-  width: calc(33.3333% - 22px);
 }
 .showcase-segment + .showcase-segment {
   margin-top: 32px;
@@ -562,7 +554,7 @@ h6 {
   padding-left: 59px;
 }
 .form-control-icon-left .form__label {
-  left: 60px;
+  left: 60.5px;
 }
 .form-control-icon-right .form__input {
   padding-right: 59px;
@@ -579,7 +571,14 @@ h6 {
   padding-bottom: 3px;
 }
 .form-control-m .form__input.is-fill + .form__label {
-  top: 3px;
+  top: 4px;
+  font-size: 10px;
+  line-height: 20px;
+}
+.form-control-m .form__input.is-focus + .form__label {
+  top: 4px;
+  font-size: 10px;
+  line-height: 20px;
 }
 .form-control-m .form__icon {
   left: 16px;
@@ -599,7 +598,7 @@ h6 {
   padding-left: 51px;
 }
 .form-control-m.form-control-icon-left .form__label {
-  left: 51px;
+  left: 52.5px;
 }
 .form-control-m.form-control-icon-right .form__input {
   padding-right: 55px;
@@ -635,13 +634,20 @@ h6 {
   color: #787486;
   height: 56px;
   font-weight: 500;
+  color: var(--dark);
+}
+.form__input:hover {
+  border-color: var(--dark);
+}
+.form__input:hover ~ .form__icon svg {
+  stroke: var(--dark);
 }
 .form__input.is-fill {
   padding-top: 23px;
-  padding-bottom: 5px;
+  padding-bottom: 6px;
 }
 .form__input.is-fill + .form__label {
-  top: 5px;
+  top: 6px;
   font-size: 12px;
   line-height: 20px;
   transition: 0.3s;
@@ -649,10 +655,11 @@ h6 {
 .form__input.is-focus {
   border-color: var(--primary);
   padding-top: 23px;
-  padding-bottom: 5px;
+  padding-bottom: 6px;
 }
 .form__input.is-focus + .form__label {
-  top: 5px;
+  color: var(--primary);
+  top: 6px;
   font-size: 12px;
   line-height: 20px;
   transition: 0.3s;
@@ -679,25 +686,42 @@ h6 {
   background-color: #F5F5F6;
   border-color: #EAECF1;
   pointer-events: none;
+  color: rgba(120, 116, 134, 0.7);
+}
+.form__input.is-disabled::-moz-placeholder {
+  color: rgba(120, 116, 134, 0.7);
+}
+.form__input.is-disabled::placeholder {
+  color: rgba(120, 116, 134, 0.7);
 }
 .form__input.is-disabled ~ .form__icon {
   pointer-events: none;
+  opacity: 0.7;
 }
 .form__input.is-disabled ~ .form__icon-info {
   pointer-events: none;
+}
+.form__input.is-disabled + .form__label {
+  opacity: 0.7;
 }
 .form__input.is-disabled + .form__label span {
   color: var(--grey);
 }
 
 .form-control-m .form__textarea {
+  box-sizing: border-box;
+  display: inline-table;
   padding: 11px 15px;
   font-size: 14px;
   line-height: 24px;
   min-height: 150px;
+  border-radius: 6px;
 }
 .form-control-m .form__textarea + .form__label {
-  top: 11px;
+  top: 12px;
+  left: 16.5px;
+  font-size: 14px;
+  line-height: 24px;
 }
 .form-control-m .form__textarea.is-fill {
   padding-top: 31px;
@@ -722,15 +746,22 @@ h6 {
   padding: 14px 19px;
   border: 1px solid #eaecf1;
   border-radius: 8px;
-  color: #787486;
+  color: var(--dark);
   min-height: 170px;
   font-weight: 500;
   margin-bottom: 0px;
 }
+.form__textarea:hover {
+  border-color: var(--dark);
+}
+.form__textarea:hover ~ .form__icon svg {
+  stroke: var(--dark);
+}
 .form__textarea + .form__label {
-  top: 14px;
-  font: 16px;
+  top: 15px;
+  font-size: 16px;
   line-height: 26px;
+  left: 20.5px;
 }
 .form__textarea.is-focus {
   padding-top: 36px;
@@ -763,6 +794,16 @@ h6 {
 .form__textarea.is-disabled {
   background-color: #F5F5F6;
   pointer-events: none;
+  color: rgba(120, 116, 134, 0.7);
+}
+.form__textarea.is-disabled::-moz-placeholder {
+  color: rgba(120, 116, 134, 0.7);
+}
+.form__textarea.is-disabled::placeholder {
+  color: rgba(120, 116, 134, 0.7);
+}
+.form__textarea.is-disabled + .form__label {
+  opacity: 0.7;
 }
 .form__textarea.is-disabled + .form__label span {
   color: var(--grey);
@@ -772,7 +813,7 @@ h6 {
   width: 24px;
   height: 24px;
   position: absolute;
-  top: 15px;
+  top: 16px;
   left: 20px;
 }
 .form__icon svg {
@@ -786,6 +827,7 @@ h6 {
   top: 16px;
   right: 20px;
   cursor: pointer;
+  transform: rotate(180deg);
 }
 .form__icon-info svg {
   stroke: var(--grey);
@@ -824,8 +866,8 @@ h6 {
   color: var(--grey);
   background: url("../images/icons/ArrowDown_N-24.svg") center center/24px no-repeat;
   transform: rotate(0);
-  top: 17px;
-  right: 16px;
+  top: 19px;
+  right: 19px;
   transform-origin: center center;
 }
 
@@ -859,6 +901,12 @@ h6 {
 .dropdown-list-m .nice-select {
   padding: 11px 55px 11px 15px;
   height: 48px;
+  font-size: 14px;
+  line-height: 24px;
+}
+.dropdown-list-m .nice-select::after {
+  right: 16px;
+  top: 14px;
 }
 .dropdown-list-m .nice-select .option {
   font-size: 14px;
@@ -894,6 +942,7 @@ h6 {
   font-size: 16px;
   line-height: 26px;
   font-weight: 500;
+  color: var(--dark);
 }
 
 .nice-select:hover {
@@ -902,6 +951,7 @@ h6 {
 
 .nice-select.open {
   border-color: var(--primary);
+  color: var(--dark);
 }
 .nice-select.open::after {
   background-image: url("../images/icons/ArrowDown_N-24-color.svg");

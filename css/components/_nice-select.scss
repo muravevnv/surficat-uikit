@@ -22,8 +22,8 @@
   color: var(--grey);
   background: url('../images/icons/ArrowDown_N-24.svg') center center / 24px no-repeat;
   transform: rotate(0);
-  top: 17px;
-  right: 16px;
+  top: 19px;
+  right: 19px;
   transform-origin: center center;
 }
 
@@ -67,6 +67,13 @@
     .nice-select  {
       padding: 11px 55px 11px 15px;
       height: 48px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    .nice-select::after {
+      right: 16px;
+      top: 14px;
     }
 
     .nice-select .option {
@@ -108,6 +115,7 @@
   font-size: 16px;
   line-height: 26px;
   font-weight: 500;
+  color: var(--dark);
 }
 
 .nice-select:hover {
@@ -116,6 +124,8 @@
 
 .nice-select.open {
   border-color: var(--primary);
+
+  color: var(--dark);
 
   &::after {
     background-image: url('../images/icons/ArrowDown_N-24-color.svg');
