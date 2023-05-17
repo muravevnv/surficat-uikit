@@ -279,6 +279,10 @@
   font-weight: 500;
   margin-bottom: 0px;
 
+  ~ .form__icon-info {
+    top: 15px;
+  }
+
   &:hover {
     border-color: var(--dark);
 

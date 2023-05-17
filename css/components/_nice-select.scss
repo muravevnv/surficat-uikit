@@ -20,7 +20,7 @@
   width: 24px;
   height: 24px;
   color: var(--grey);
-  background: url('../images/icons/ArrowDown_N-24.svg') center center / 24px no-repeat;
+  background: url('../images/select-arrow.svg') center center / 24px no-repeat;
   transform: rotate(0);
   top: 19px;
   right: 19px;
@@ -56,24 +56,35 @@
   }
 
   &.is-disabled {
+
+    .dropdown-list__icon {
+      svg {
+        stroke: rgba(#787486, .7);
+      }
+    }
+
     .nice-select {
       background-color: var(--bg-grey);
       pointer-events: none;
+      opacity: .7;
     }
   }
 
   &-m {
+
+
 
     .nice-select  {
       padding: 11px 55px 11px 15px;
       height: 48px;
       font-size: 14px;
       line-height: 24px;
+      border-radius: 6px;
     }
 
     .nice-select::after {
-      right: 16px;
-      top: 14px;
+      right: 15px;
+      top: 15px;
     }
 
     .nice-select .option {
@@ -108,6 +119,7 @@
   align-items: center;
   font-size: 16px;
   line-height: 26px;
+  border-radius: 8px;
 }
 
 .nice-select .option {
@@ -120,6 +132,10 @@
 
 .nice-select:hover {
   border-color: var(--grey);
+
+  &::after {
+    background-image: url('../images/select-arrow-black.svg');
+  }
 }
 
 .nice-select.open {
@@ -128,7 +144,7 @@
   color: var(--dark);
 
   &::after {
-    background-image: url('../images/icons/ArrowDown_N-24-color.svg');
+    background-image: url('../images/select-arrow-color.svg');
   }
 
   ~ .dropdown-list__icon {
@@ -137,4 +153,3 @@
     }
   }
 }
-

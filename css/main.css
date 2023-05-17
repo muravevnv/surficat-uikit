@@ -751,6 +751,9 @@ h6 {
   font-weight: 500;
   margin-bottom: 0px;
 }
+.form__textarea ~ .form__icon-info {
+  top: 15px;
+}
 .form__textarea:hover {
   border-color: var(--dark);
 }
@@ -864,7 +867,7 @@ h6 {
   width: 24px;
   height: 24px;
   color: var(--grey);
-  background: url("../images/icons/ArrowDown_N-24.svg") center center/24px no-repeat;
+  background: url("../images/select-arrow.svg") center center/24px no-repeat;
   transform: rotate(0);
   top: 19px;
   right: 19px;
@@ -894,19 +897,24 @@ h6 {
   left: 20px;
   z-index: 5;
 }
+.dropdown-list.is-disabled .dropdown-list__icon svg {
+  stroke: rgba(120, 116, 134, 0.7);
+}
 .dropdown-list.is-disabled .nice-select {
   background-color: var(--bg-grey);
   pointer-events: none;
+  opacity: 0.7;
 }
 .dropdown-list-m .nice-select {
   padding: 11px 55px 11px 15px;
   height: 48px;
   font-size: 14px;
   line-height: 24px;
+  border-radius: 6px;
 }
 .dropdown-list-m .nice-select::after {
-  right: 16px;
-  top: 14px;
+  right: 15px;
+  top: 15px;
 }
 .dropdown-list-m .nice-select .option {
   font-size: 14px;
@@ -935,6 +943,7 @@ h6 {
   align-items: center;
   font-size: 16px;
   line-height: 26px;
+  border-radius: 8px;
 }
 
 .nice-select .option {
@@ -948,13 +957,16 @@ h6 {
 .nice-select:hover {
   border-color: var(--grey);
 }
+.nice-select:hover::after {
+  background-image: url("../images/select-arrow-black.svg");
+}
 
 .nice-select.open {
   border-color: var(--primary);
   color: var(--dark);
 }
 .nice-select.open::after {
-  background-image: url("../images/icons/ArrowDown_N-24-color.svg");
+  background-image: url("../images/select-arrow-color.svg");
 }
 .nice-select.open ~ .dropdown-list__icon svg {
   stroke: var(--primary);
