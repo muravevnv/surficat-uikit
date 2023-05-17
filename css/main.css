@@ -717,6 +717,9 @@ h6 {
   min-height: 150px;
   border-radius: 6px;
 }
+.form-control-m .form__textarea ~ .form__icon-info {
+  top: 12px;
+}
 .form-control-m .form__textarea + .form__label {
   top: 12px;
   left: 16.5px;

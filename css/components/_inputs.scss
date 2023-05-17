@@ -233,6 +233,10 @@
       min-height: 150px;
       border-radius: 6px;
 
+      ~ .form__icon-info {
+        top: 12px;
+      }
+
       + .form__label {
         top: 12px;
         left: 16.5px;
