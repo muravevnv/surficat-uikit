@@ -948,6 +948,12 @@ h6 {
   line-height: 26px;
   border-radius: 8px;
 }
+.nice-select.is-fill {
+  color: var(--dark);
+}
+.nice-select.is-fill ~ .dropdown-list__icon svg {
+  stroke: var(--dark);
+}
 
 .nice-select .option {
   padding: 9px 12px;

@@ -1,3 +1,5 @@
+
+
 const formControls = document.querySelectorAll(".js-form-control");
 
 formControls.forEach(function (item) {
@@ -20,11 +22,34 @@ formControls.forEach(function (item) {
   });
 });
 
+var options = {
+  placeholder: 'Name of dropdown list'
+}
+
+
+
 const selects = document.querySelectorAll("select");
 
 selects.forEach(function (item) {
-  NiceSelect.bind(item);
+  NiceSelect.bind(item, {placeholder: 'Name of the dropdown list'});
 });
+
+const niceSelects = document.querySelectorAll('.nice-select');
+console.log(niceSelects)
+
+niceSelects.forEach(function(item){
+  item.addEventListener('click', function(){
+    let niceSelectsOptions = item.querySelectorAll('.option');
+    console.log(niceSelectsOptions)
+
+    niceSelectsOptions.forEach(function(el){
+      if(el.classList.contains('selected')){
+        item.classList.add('is-fill')
+      }
+    })
+  })
+ 
+})
 
 var tx = document.getElementsByTagName("textarea"); //РАСТЯГИВАЕМ_textarea
 
