@@ -924,6 +924,9 @@ h6 {
   line-height: 24px;
   border-radius: 6px;
 }
+.dropdown-list-m .nice-select .list {
+  border-radius: 6px;
+}
 .dropdown-list-m .nice-select::after {
   right: 15px;
   top: 15px;

@@ -81,6 +81,10 @@
       font-size: 14px;
       line-height: 24px;
       border-radius: 6px;
+
+      .list {
+        border-radius: 6px;
+      }
     }
 
     .nice-select::after {
