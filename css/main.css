@@ -1350,6 +1350,9 @@ h6 {
 .header-nav__item:last-of-type {
   margin-right: 0;
 }
+.header-nav__item.is-active > a {
+  color: var(--primary);
+}
 .header-nav__item > a {
   display: block;
   font-size: 16px;
@@ -1366,6 +1369,10 @@ h6 {
   font-size: 16px;
   line-height: 26px;
   margin-right: 1px;
+  cursor: pointer;
+}
+.header-cabinet:hover {
+  color: var(--primary);
 }
 
 .showcase-header-md {
