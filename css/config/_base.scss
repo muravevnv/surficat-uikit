@@ -33,7 +33,7 @@ h1,h2,h3,h4,h5 {
 }
 
 main {
-  padding: 96px 0;
+  min-height: 100vh;
 }
 
 .container {
@@ -45,6 +45,7 @@ main {
 
 
 .showcase {
+  padding: 96px 0;
 
   &-box {
 
@@ -106,6 +107,29 @@ main {
     display: flex;
     align-items: center;
     gap: 32px;
+  }
+
+  &-invert {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), #FFFFFF;
+    height: 100%;
+
+    .showcase-box__title {
+      color: var(--white);
+    }
+
+    .showcase-section__subtitle {
+      color: var(--white);
+    }
+
+    .showcase-section__head {
+      border-bottom: 1px solid var(--white);
+    }
+
+    .showcase-card {
+      border-color: var(--white);
+      padding: 0;
+      margin-top: 0;
+    }
   }
 }
 
