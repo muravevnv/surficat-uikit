@@ -21,6 +21,10 @@
     border-radius: 4px;
     cursor: pointer;
 
+    &:hover {
+      color: var(--black);
+    }
+
     &.is-active {
       background-color: var(--primary);
       color: var(--white);

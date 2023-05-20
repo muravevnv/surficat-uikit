@@ -67,3 +67,33 @@ function OnInput() {
 
   this.style.height = this.scrollHeight + "px"; //////console.log(this.scrollHeight);
 }
+
+
+let listItem = document.querySelectorAll('.modal-list__item');
+
+listItem.forEach(function(item) {
+  item.addEventListener('click', function(){
+    this.classList.toggle('is-active')
+  })
+})
+
+let paginationItems = document.querySelectorAll('.js-pagination-item');
+
+paginationItems.forEach(function(item){
+  item.addEventListener('click', function(){
+    paginationItems.forEach(el => el.classList.remove('is-active'))
+    item.classList.add('is-active')
+  })
+})
+
+let tabs = document.querySelectorAll('.tabs');
+
+tabs.forEach(function(item){
+  const tabsItems = item.querySelectorAll('.tabs__item');
+  tabsItems.forEach(function(el){
+    el.addEventListener('click', function(){
+      tabsItems.forEach(k=>k.classList.remove('is-active'))
+      el.classList.add('is-active')
+    })
+  })
+})

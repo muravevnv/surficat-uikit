@@ -82,6 +82,7 @@
   }
 
   &-list {
+    margin: -12px 0 -11px;
 
     &__item {
       display: flex;
@@ -90,11 +91,13 @@
       line-height: 24px;
       padding-right: 40px;
       position: relative;
+      padding: 12px 40px 11px 0;
+      cursor: pointer;
 
       &::before {
         position: absolute;
         content: url('../images/check-list.svg');
-        top: 0;
+        top: 12px;
         right: 0;
         opacity: 0;
       }
@@ -108,8 +111,6 @@
       }
       
       + .modal-list__item {
-        margin-top: 12px;
-        padding-top: 11px;
         border-top: 1px solid var(--border-grey);
       }
     }
