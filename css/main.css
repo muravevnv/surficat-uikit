@@ -1069,10 +1069,10 @@ h6 {
 }
 .radio__input:disabled + .radio__label {
   pointer-events: none;
-  color: rgba(120, 116, 134, 0.7);
+  color: rgba(120, 116, 134, 0.6);
 }
 .radio__input:disabled + .radio__label::before {
-  border-color: rgba(120, 116, 134, 0.7);
+  border-color: rgba(120, 116, 134, 0.6);
 }
 .radio__label {
   display: block;
@@ -1139,10 +1139,10 @@ h6 {
 }
 .checkbox__input:disabled + .checkbox__label {
   pointer-events: none;
-  color: rgba(120, 116, 134, 0.7);
+  color: rgba(120, 116, 134, 0.6);
 }
 .checkbox__input:disabled + .checkbox__label::before {
-  border-color: rgba(120, 116, 134, 0.7);
+  border-color: rgba(120, 116, 134, 0.6);
 }
 .checkbox__label {
   display: block;
